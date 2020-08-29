@@ -2,11 +2,15 @@ new Vue({
   el: "#app",
   data: {
     title: "Becoming a view ninja",
-    name: "Ryu",
+    showName: false,
+    showAge: true,
   },
   methods: {
-    logMessage() {
-      console.log("modifiers");
+    toggleName() {
+      this.showName = !this.showName;
+    },
+    toggleAge() {
+      this.showAge = !this.showAge;
     },
   },
 });
